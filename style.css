@@ -7,8 +7,8 @@ body{
     font-family: 'CustomFont'!important;
     padding-left: 38px;
     padding-right: 38px;
-    width: 100vw;
-    overflow-x: hidden;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 .overall{
     display: flex;
@@ -45,6 +45,7 @@ body{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+    position: relative;
     /* justify-items: center; */
     
 }
@@ -118,4 +119,45 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+.flytext{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+     border-bottom: 3px ridge #fff;
+     z-index: 1;
+}
+.textfade{
+    color: #ffffffda;
+}
+.textloibot{
+    position: absolute;
+    top: 90%;
+    left: 80%;
+     border-bottom: 3px ridge #fff;
+}
+.pole{
+    position: relative;
+    border-radius: 25px;
+}
+.flytexttop{
+    /* position: static; */
+    position: absolute;
+    top: 10%;
+    left: 10%;
+     border-bottom: 3px ridge #fff;
+}
+.textloitop{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+     border-bottom: 3px ridge #fff;
+}
+a:hover {
+  background-color: #2f2e2e;
+  font-size: 18px;
+}
+.oneslashtwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
